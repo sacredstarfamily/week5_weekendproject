@@ -1,0 +1,14 @@
+INSERT INTO sales_person (first_name, last_name, email, num_sales) VALUES ('Bob', 'Ross', 'bob@123.com', 0);
+INSERT INTO sales_person (first_name, last_name, email, num_sales) VALUES ('Cindy', 'Loohoo', 'cindy@123.com', 0);
+SELECT * FROM sales_person sp ;
+INSERT INTO mechanic (first_name,last_name,phone)VALUES ('John', 'Doe', '(123)456-789');
+INSERT INTO mechanic (first_name,last_name,phone)VALUES ('Silly', 'Man', '(234)234-8765');
+SELECT * FROM mechanic m ;
+INSERT INTO customer (first_name,last_name,email) VALUES ('Tom', 'Smith', 'tom@123.com');
+INSERT INTO customer (first_name,last_name,email) VALUES ('Sarah', 'Jane', 'sarah@123.com');
+INSERT INTO vehicle (vin_number, vehicle_make, vehicle_model, vehicle_year) VALUES ('123lkj123123', 'Toyota', 'Sienna', 2005);
+INSERT INTO vehicle (vin_number, vehicle_make, vehicle_model, vehicle_year) VALUES ('234234234bng234', 'Dodge', 'Caravan', 2015);
+CALL vehicle_sale(:p_customer_id, :p_associate_id, :p_vin_number, :p_price);
+SELECT * FROM sale s;
+SELECT * FROM service_history sh ;
+SELECT * FROM sales_person sp ;
